@@ -130,8 +130,6 @@ $catalog:=cs.Catalog.new()
 $relations:=$catalog.get1toN("Table_1"; "Field_2")  //1toN relations to this field
 ```
 
-* Result
-
 ```json
 {
 	"field": {
