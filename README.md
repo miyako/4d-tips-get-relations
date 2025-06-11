@@ -19,3 +19,10 @@ The schema of a 4D database is stored in the `catalog.4DCatalog` file of a proje
 
 > [!TIP]
 > Starting with 4D 20 R4, the command can alternatively [export the schema in HTML format](https://blog.4d.com/structure-definition-export-in-html/).
+
+## The XML
+
+The database scheme is described in XML format. You can use the [DOM Find XML element](https://developer.4d.com/docs/commands/dom-find-xml-element) command with standard XPath to query information.
+
+> [!WARNING]
+> The revised [XPath](https://developer.4d.com/docs/commands/dom-set-xml-element-value) support of [4D 18 R3](https://blog.4d.com/enhanced-xpath-support/) can potentially break legacy code; in previous versions, the path started with the element name of the current node, which would match a child element name in standard XPath. See [Support of XPath notation (DOM)](https://doc.4d.com/4Dv20/4D/20.6/Overview-of-XML-DOM-Commands.300-7487227.en.html#4967352). The [Use standard XPath](https://developer.4d.com/docs/settings/compatibility) compatibility option must be explicitly activated in legacy projects. 
