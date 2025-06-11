@@ -120,7 +120,7 @@ Function get($tableName : Text; $fieldName : Text; $a : Text; $b : Text) : Objec
 ```
 
 > [!TIP]
-> In 4D 20 R5 and later, you can use [shared singletons](https://blog.4d.com/singletons-in-4d/) to instantiate a class just once and retain static properties (such as the root DOM reference in this example). 
+> In 4D 20 R5 and later, you can use [shared singletons](https://blog.4d.com/singletons-in-4d/) to instantiate a class just once and retain static properties, such as the root DOM reference in this example. 
 
 Relations can be found based on the table name and field name.
 
